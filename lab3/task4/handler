@@ -1,0 +1,8 @@
+#!/bin/bash
+sh /home/user/lab3/task4/generator&pid0=$!
+sh /home/user/lab3/task4/generator&pid1=$!
+sh /home/user/lab3/task4/generator&pid2=$!
+echo $pid0
+echo $pid1
+echo $pid2
+renice +10 -p $pid0

@@ -1,0 +1,18 @@
+#!/bin/bash
+echo "Enter 3 numbers: "
+read a b c 
+if [[ "$a" -gt "$b" ]]
+then if [[ "$a" -gt "$c" ]]
+then echo $a
+fi
+fi
+if [[ "$b" -gt "$a" ]]
+then if [["$b" -gt "$c" ]]
+then echo $a
+fi
+fi
+if [[ "$c" -gt "$a" ]]
+then if [[ "$c" -gt "$b" ]]
+then echo $a
+fi
+fi

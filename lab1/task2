@@ -1,0 +1,9 @@
+string=""
+while [ "$a" != q ]
+do read a
+string+=$a
+done
+echo $string
+
+
+
